@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id">
+     <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+          <title>Login PPDB</title>
+
+          <!-- Bootstrap 5 -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+          <!-- Bootstrap Icons -->
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+          <link rel="stylesheet" href="css/loginPPDB.css" />
+     </head>
+
+     <body>
+          <main class="login-page">
+               <!-- Kembali -->
+               <a href="#" class="back-link">
+                    <i class="bi bi-arrow-left"></i>
+                    <span>Kembali ke beranda</span>
+               </a>
+
+               <!-- CARD LOGIN -->
+               <div class="login-card">
+                    <!-- HEADER -->
+                    <div class="login-header">
+                         <div class="login-label">
+                              <i class="bi bi-box-arrow-in-right"></i>
+                              <span>LOGIN SISWA</span>
+                         </div>
+
+                         <h1 class="login-title">Login PPDB</h1>
+
+                         <p class="login-subtitle">Masuk dengan NISN, tanggal KK, dan PIN.</p>
+                    </div>
+
+                    <!-- BODY -->
+                    <div class="login-body">
+                         <form>
+                              <!-- NISN -->
+                              <div class="form-group">
+                                   <label for="nisn" class="form-label"> NISN </label>
+
+                                   <input type="text" id="nisn" class="form-control" placeholder="10 digit NISN" maxlength="10" />
+                              </div>
+
+                              <!-- TANGGAL KK -->
+                              <div class="form-group">
+                                   <label for="tanggal" class="form-label"> Tanggal Penerbitan KK/SKD/SKPD </label>
+
+                                   <input type="date" id="tanggal" class="form-control date-input" />
+                              </div>
+
+                              <!-- PIN -->
+                              <div class="form-group">
+                                   <label for="pin" class="form-label"> PIN Pendaftaran </label>
+
+                                   <input type="password" id="pin" class="form-control pin-input" placeholder="••••" maxlength="4" />
+                              </div>
+
+                              <!-- BUTTON -->
+                              <button type="submit" class="btn btn-login">
+                                   <i class="bi bi-box-arrow-in-right"></i>
+                                   <a href="data diri.html" class="masuk">masuk</a>
+                              </button>
+
+                              <!-- AMBIL PIN -->
+                              <div class="get-pin">
+                                   <div class="get-pin-text">Belum punya PIN?</div>
+
+                                   <a href="#" class="get-pin-link">
+                                        <i class="bi bi-key-fill"></i>
+                                        <span>Ambil PIN di sini</span>
+                                   </a>
+                              </div>
+
+                              <!-- INFO -->
+                              <div class="info-box">
+                                   <strong>Info:</strong>
+                                   Gunakan kredensial yang sama saat Anda mengambil PIN. NISN dan Tanggal KK/SKD/SKPD harus sesuai dengan data saat generate PIN.
+                              </div>
+                         </form>
+                    </div>
+               </div>
+          </main>
+
+          <!-- Bootstrap JS -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     </body>
+</html>
