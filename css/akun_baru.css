@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fff;
+  color: #35151e;
+}
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+/* =========================
+   LEFT SIDE
+   ========================= */
+
+.register-form {
+  width: 50%;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.form-inner {
+  width: min(100%, 464px);
+  padding: 58px 0 35px;
+}
+
+.school-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #752137;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2.1px;
+  white-space: nowrap;
+}
+
+.school-name{
+  color: #752137; 
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.school-brand i {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.heading {
+  margin-top: 36px;
+  margin-bottom: 31px;
+}
+
+.heading h1 {
+  margin: 0;
+  color: #32151d;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.heading p {
+  margin: 9px 0 0;
+  color: #7d7073;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* Inputs */
+.input-wrap {
+  height: 44px;
+  width: 100%;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.input-wrap i {
+  position: absolute;
+  z-index: 2;
+  left: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #762039;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.input-wrap .form-control {
+  width: 100%;
+  height: 44px;
+  padding: 0 18px 0 43px;
+  border: 0;
+  border-radius: 24px;
+  background: #f3eaea;
+  color: #3c252b;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+.input-wrap .form-control::placeholder {
+  color: #827477;
+  opacity: 1;
+}
+
+.input-wrap .form-control:focus {
+  background: #f3eaea;
+  box-shadow: 0 0 0 2px rgba(117, 32, 55, 0.12);
+}
+
+/* Button */
+.register-btn {
+    width: 100%;
+    height: 44px;
+    margin-top: 1px;
+    border: 0;
+    border-radius: 24px;
+    background: linear-gradient(90deg, #871a38 0%, #b42649 100%);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    box-shadow: 0 12px 18px rgba(117, 24, 51, .24);
+    transition: transform .15s ease, box-shadow .15s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-btn:hover,
+.register-btn:focus {
+  color: #fff;
+  background: linear-gradient(90deg, #871a38 0%, #b42649 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 20px rgba(117, 24, 51, .28);
+}
+
+.login-text {
+  margin: 33px 0 0;
+  text-align: center;
+  color: #85777a;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #762039;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   RIGHT SIDE
+   ========================= */
+
+.welcome-panel {
+  width: 50%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #a91f40;
+}
+
+.reference-panel {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+  .register-page {
+    overflow-y: auto;
+  }
+
+  .register-form {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .welcome-panel {
+    display: none;
+  }
+
+  .form-inner {
+    width: min(100% - 48px, 464px);
+    padding-top: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-inner {
+    width: calc(100% - 32px);
+    padding-top: 35px;
+  }
+
+  .school-brand {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .heading {
+    margin-top: 30px;
+  }
+
+  .heading h1 {
+    font-size: 27px;
+  }
+}

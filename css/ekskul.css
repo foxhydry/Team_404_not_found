@@ -1,0 +1,740 @@
+/* =====================================================
+   EKSKUL DETAIL PAGE STYLES
+===================================================== */
+
+/* Back Navigation */
+.ekskul-back {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.82),
+    rgba(255, 255, 255, 0.52)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 50px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(75, 10, 28, 0.12);
+  color: var(--maroon);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.ekskul-back:hover {
+  background: var(--maroon);
+  color: white;
+  transform: translateX(-3px);
+  box-shadow: 0 8px 25px rgba(109, 8, 34, 0.25);
+}
+
+.ekskul-back i {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.ekskul-back:hover i {
+  transform: translateX(-3px);
+}
+
+/* Hero Banner */
+.ekskul-hero {
+  position: relative;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: linear-gradient(135deg, #4d0012, #8d102f);
+}
+
+.ekskul-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(77, 0, 18, 0.3) 0%,
+    rgba(77, 0, 18, 0.85) 100%
+  );
+  z-index: 1;
+}
+
+.ekskul-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 0;
+  color: white;
+  width: 100%;
+}
+
+.ekskul-hero-badge {
+  display: inline-block;
+  padding: 6px 18px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.ekskul-hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.ekskul-hero-desc {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.ekskul-hero-icon {
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+  z-index: 2;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  font-size: 52px;
+  color: white;
+}
+
+/* Quick Info Cards */
+.ekskul-info-bar {
+  margin-top: -50px;
+  position: relative;
+  z-index: 3;
+}
+
+.ekskul-info-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 15px 45px rgba(75, 10, 28, 0.1);
+  border: 1px solid #f0e0e4;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ekskul-info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(75, 10, 28, 0.15);
+}
+
+.ekskul-info-icon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fce4ea, #f8d0da);
+  color: var(--maroon);
+  font-size: 22px;
+}
+
+.ekskul-info-card small {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.ekskul-info-card strong {
+  display: block;
+  font-size: 15px;
+  color: var(--text);
+}
+
+/* Content Sections */
+.ekskul-section {
+  padding: 80px 0;
+}
+
+.ekskul-section.bg-alt {
+  background: #fff7f8;
+}
+
+.ekskul-section-label {
+  display: inline-block;
+  padding: 6px 16px;
+  background: linear-gradient(135deg, #fce4ea, #f8d0da);
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--maroon);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.ekskul-section h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.ekskul-section h2 span {
+  color: var(--maroon);
+}
+
+.ekskul-section-desc {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+/* About Content */
+.ekskul-about-text {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.ekskul-about-text p {
+  margin-bottom: 20px;
+}
+
+/* Feature/Benefit Cards */
+.ekskul-feature-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 35px rgba(75, 10, 28, 0.08);
+  border: 1px solid #f0e0e4;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ekskul-feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 45px rgba(75, 10, 28, 0.14);
+}
+
+.ekskul-feature-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #a91435, #d6254d);
+  color: white;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.ekskul-feature-card h5 {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.ekskul-feature-card p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Activity Timeline */
+.ekskul-activity {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+
+.ekskul-activity::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 30px;
+  bottom: -30px;
+  width: 2px;
+  background: #f0d9df;
+}
+
+.ekskul-activity:last-child::before {
+  display: none;
+}
+
+.ekskul-activity-dot {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #a91435, #d6254d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+}
+
+.ekskul-activity h5 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: var(--text);
+}
+
+.ekskul-activity p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Achievement Card */
+.ekskul-achievement {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 8px 30px rgba(75, 10, 28, 0.08);
+  border: 1px solid #f0e0e4;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.ekskul-achievement:hover {
+  transform: translateX(5px);
+}
+
+.ekskul-achievement-icon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ffeaaa, #ffd54f);
+  color: #a67c00;
+  font-size: 22px;
+}
+
+.ekskul-achievement h6 {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 3px;
+  color: var(--text);
+}
+
+.ekskul-achievement small {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Gallery Grid */
+.ekskul-gallery-item {
+  border-radius: 18px;
+  overflow: hidden;
+  height: 220px;
+  position: relative;
+  box-shadow: 0 8px 28px rgba(75, 10, 28, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.ekskul-gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.ekskul-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ekskul-gallery-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8e7eb, #fce4ea);
+  color: var(--maroon);
+  font-size: 40px;
+}
+
+/* CTA Section */
+.ekskul-cta {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #4d0012, #8d102f);
+  text-align: center;
+  color: white;
+}
+
+.ekskul-cta h2 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.ekskul-cta p {
+  font-size: 17px;
+  opacity: 0.85;
+  max-width: 550px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+}
+
+.btn-ekskul-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 30px;
+  background: white;
+  color: var(--maroon);
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.btn-ekskul-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+  color: var(--maroon-dark);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .ekskul-hero h1 {
+    font-size: 42px;
+  }
+
+  .ekskul-hero-icon {
+    display: none;
+  }
+
+  .ekskul-section h2 {
+    font-size: 32px;
+  }
+
+  .ekskul-cta h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ekskul-hero {
+    min-height: 380px;
+  }
+
+  .ekskul-hero h1 {
+    font-size: 34px;
+    letter-spacing: -1px;
+  }
+
+  .ekskul-hero-desc {
+    font-size: 15px;
+  }
+
+  .ekskul-back {
+    top: 16px;
+    left: 16px;
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .ekskul-section {
+    padding: 60px 0;
+  }
+
+  .ekskul-section h2 {
+    font-size: 28px;
+  }
+
+  .ekskul-cta {
+    padding: 60px 0;
+  }
+
+  .ekskul-cta h2 {
+    font-size: 28px;
+  }
+}
+
+.ekskul-hero {
+  isolation: isolate;
+}
+
+.ekskul-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.13), transparent 27%),
+    radial-gradient(circle at 8% 88%, rgba(255, 255, 255, 0.08), transparent 24%);
+  pointer-events: none;
+}
+
+.ekskul-hero h1,
+.ekskul-section h2,
+.ekskul-cta h2 {
+  text-wrap: balance;
+}
+
+.ekskul-back:focus-visible,
+.btn-ekskul-cta:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.85);
+  outline-offset: 3px;
+}
+
+.ekskul-info-card {
+  min-height: 100%;
+}
+
+.ekskul-section-label {
+  box-shadow: 0 6px 18px rgba(109, 8, 34, 0.06);
+}
+
+.ekskul-feature-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.ekskul-feature-card::after {
+  content: "";
+  position: absolute;
+  top: -45px;
+  right: -45px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: rgba(214, 37, 77, 0.06);
+  transition: transform 0.35s ease;
+}
+
+.ekskul-feature-card:hover::after {
+  transform: scale(1.25);
+}
+
+.ekskul-feature-card:hover .ekskul-feature-icon {
+  transform: scale(1.07) rotate(-3deg);
+}
+
+.ekskul-activity-dot {
+  box-shadow: 0 0 0 5px rgba(214, 37, 77, 0.09);
+}
+
+.ekskul-achievement {
+  position: relative;
+  overflow: hidden;
+}
+
+.ekskul-achievement::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #ffd54f, #f0a202);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.ekskul-achievement:hover::before {
+  opacity: 1;
+}
+
+.ekskul-gallery-placeholder {
+  overflow: hidden;
+}
+
+.ekskul-gallery-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.65), transparent 18%),
+    radial-gradient(circle at 78% 72%, rgba(171, 0, 0, 0.08), transparent 24%);
+}
+
+.ekskul-gallery-placeholder i {
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 5px 12px rgba(109, 8, 34, 0.12));
+}
+
+.btn-ekskul-cta {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ekskul-cta::after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -35%;
+  width: 28%;
+  height: 220%;
+  background: rgba(171, 0, 0, 0.1);
+  transform: rotate(20deg);
+  transition: left 0.45s ease;
+}
+
+.btn-ekskul-cta:hover::after {
+  left: 115%;
+}
+
+@media (max-width: 767px) {
+  .ekskul-back {
+    top: 14px;
+    left: 14px;
+  }
+
+  .ekskul-hero {
+    min-height: 420px;
+  }
+
+  .ekskul-hero-content {
+    padding: 48px 0;
+  }
+
+  .ekskul-info-bar {
+    margin-top: -35px;
+  }
+
+  .ekskul-info-card {
+    padding: 20px;
+  }
+
+  .ekskul-info-icon {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+  }
+
+  .ekskul-section {
+    padding: 60px 0;
+  }
+
+  .ekskul-feature-card {
+    padding: 24px;
+  }
+
+  .ekskul-activity {
+    padding-left: 32px;
+    margin-bottom: 24px;
+  }
+
+  .ekskul-activity::before {
+    left: 12px;
+  }
+
+  .ekskul-achievement {
+    padding: 20px;
+  }
+
+  .ekskul-gallery-item {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ekskul-hero {
+    min-height: 390px;
+  }
+
+  .ekskul-hero-content {
+    padding: 42px 0;
+  }
+
+  .ekskul-hero h1 {
+    font-size: 31px;
+  }
+
+  .ekskul-hero-desc {
+    font-size: 14px;
+  }
+
+  .ekskul-info-card {
+    align-items: flex-start;
+  }
+
+  .ekskul-section h2 {
+    font-size: 26px;
+  }
+
+  .ekskul-section-desc {
+    font-size: 14px;
+  }
+
+  .ekskul-about-text {
+    font-size: 14px;
+  }
+
+  .ekskul-feature-card h5 {
+    font-size: 15px;
+  }
+
+  .ekskul-feature-card p,
+  .ekskul-activity p {
+    font-size: 13px;
+  }
+
+  .ekskul-gallery-item {
+    height: 155px;
+  }
+
+  .ekskul-cta h2 {
+    font-size: 25px;
+  }
+
+  .ekskul-cta p {
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
